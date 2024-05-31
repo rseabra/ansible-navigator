@@ -289,10 +289,10 @@ EOF
 chmod +x ~/bin/vault.sh
 ```
 
-Now you can export `ANSIBLE_VAULT_PASSWORD` with the result of that script:
+Now you can export `ANSIBLE_VAULT_PASSWORD_FILE` with the result of that script:
 
 ```
-ANSIBLE_VAULT_PASSWORD="$( ~/bin/vault.sh )" ansible-navigator run (...)
+ANSIBLE_VAULT_PASSWORD_FILE="$( ~/bin/vault.sh )" ansible-navigator run (...)
 ```
 
 2. Store the vault password (clear text, insecurely) on the local file system
